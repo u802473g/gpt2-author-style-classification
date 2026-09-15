@@ -1,0 +1,23 @@
+このリポジトリが収録するのは研究のドキュメントと図のみで、コードは含みません。
+
+記載している実験の実装は、以下の著作物に由来するコードを土台にしています。
+コード本体は別リポジトリで非公開にしていますが、出所を明示しておきます。
+
+------------------------------------------------------------------------
+Build a Large Language Model (From Scratch)
+https://github.com/rasbt/LLMs-from-scratch
+
+Copyright 2023-2026 Sebastian Raschka
+Licensed under the Apache License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+------------------------------------------------------------------------
+
+該当箇所: GPT-2 の実装（LayerNorm, GELU, FeedForward, MultiHeadAttention,
+TransformerBlock, GPTModel）および事前学習済み重みの読み込み処理
+（download_and_load_gpt2, load_gpt2_params_from_tf_ckpt, load_weights_into_gpt, assign）。
+
+本研究の独自部分（データセット構築、可変長スニペット抽出、分類ヘッドと
+最終実トークン抽出、更新ブロック範囲の切り分け、実験設計およびドキュメント）は
+MIT License です。LICENSE を参照してください。
+
+書籍本文（および邦訳『つくりながら学ぶ！LLM自作入門』の本文・図）は含まれません。

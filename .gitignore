@@ -1,0 +1,17 @@
+# モデル重み・チェックポイント（サイズのため同梱しない）
+*.pth
+*.ckpt
+*.ckpt.*
+gpt2/
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
